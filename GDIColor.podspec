@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Grant Davis" => "grant.davis@gmail.com" }
   s.source           = { :git => "https://github.com/gdavis/GDIColor.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/ghunterdavis>'
+  s.social_media_url = 'https://twitter.com/ghunterdavis'
 
   s.platform     = :ios, '4.0'
   s.requires_arc = true
@@ -30,8 +30,4 @@ Pod::Spec.new do |s|
     'GDIColor' => ['Pod/Assets/*.png']
   }
   s.frameworks   = 'QuartzCore','UIKit'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
