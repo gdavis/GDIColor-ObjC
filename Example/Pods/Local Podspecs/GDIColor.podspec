@@ -10,19 +10,17 @@
 Pod::Spec.new do |s|
   s.name             = "GDIColor"
   s.version          = "0.1.0"
-  s.summary          = "A short description of GDIColor."
+  s.summary          = "A category of convenience and utility methods for UIColor."
   s.description      = <<-DESC
-                       An optional longer description of GDIColor
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                        A category of convenience and utility methods for UIColor.
+                        More Coming soon!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/GDIColor"
+  s.homepage         = "https://github.com/gdavis/GDIColor"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Grant Davis" => "grant.davis@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/GDIColor.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/gdavis/GDIColor.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ghunterdavis'
 
   s.platform     = :ios, '4.0'
   s.requires_arc = true
@@ -32,8 +30,4 @@ Pod::Spec.new do |s|
     'GDIColor' => ['Pod/Assets/*.png']
   }
   s.frameworks   = 'QuartzCore','UIKit'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
