@@ -1,6 +1,6 @@
 # GDIColor
 
-[![CI Status](http://img.shields.io/travis/Grant Davis/GDIColor.svg?style=flat)](https://travis-ci.org/Grant Davis/GDIColor)
+[![CI Status](http://img.shields.io/travis/gdavis/GDIColor.svg?style=flat)](https://travis-ci.org/gdavis/GDIColor)
 [![Version](https://img.shields.io/cocoapods/v/GDIColor.svg?style=flat)](http://cocoadocs.org/docsets/GDIColor)
 [![License](https://img.shields.io/cocoapods/l/GDIColor.svg?style=flat)](http://cocoadocs.org/docsets/GDIColor)
 [![Platform](https://img.shields.io/cocoapods/p/GDIColor.svg?style=flat)](http://cocoadocs.org/docsets/GDIColor)
