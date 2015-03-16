@@ -1,5 +1,5 @@
 language: objective-c
-xcode_project: GDIColor.xcodeproj
+xcode_project: Example/GDIColor.xcodeproj
 xcode_scheme: GDIColor
 xcode_sdk: iphonesimulator
 before_script:
