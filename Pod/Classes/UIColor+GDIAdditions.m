@@ -29,13 +29,13 @@
 @implementation UIColor (GDIAdditions)
 
 
-+ (UIColor *)colorWithRGBHex:(uint)hex
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex
 {
     return [UIColor colorWithRGBHex:hex alpha:1.0f];
 }
 
 
-+ (UIColor *)colorWithRGBHex:(uint)hex alpha:(CGFloat)alpha
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex alpha:(CGFloat)alpha
 {
     return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0f
                            green:((float)((hex & 0xFF00) >> 8))/255.0f
@@ -43,7 +43,7 @@
 }
 
 
-+ (UIColor *)colorWithARGBHex:(uint)hex
++ (UIColor *)colorWithARGBHex:(NSUInteger)hex
 {
     float alpha = ((float)((hex & 0xFF000000) >> 24))/255.0f;
     return [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0f

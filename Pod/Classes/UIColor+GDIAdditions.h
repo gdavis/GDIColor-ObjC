@@ -27,9 +27,9 @@
 
 @interface UIColor(GDIAdditions)
 
-+ (UIColor *)colorWithRGBHex:(uint)hex;
-+ (UIColor *)colorWithRGBHex:(uint)hex alpha:(CGFloat)alpha;
-+ (UIColor *)colorWithARGBHex:(uint)hex;
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex;
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex alpha:(CGFloat)alpha;
++ (UIColor *)colorWithARGBHex:(NSUInteger)hex;
 + (UIColor *)colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha rgbDivisor:(CGFloat)divisor;
 + (UIColor *)randomColor;
 + (UIColor *)randomColorWithAlpha:(CGFloat)alpha;
