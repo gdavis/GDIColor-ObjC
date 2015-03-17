@@ -24,7 +24,7 @@
 
 #import "UIColor+GDIAdditions.h"
 
-#define ARC4RANDOM_MAX      0x100000000
+#define UIColorGDIAdditionsArc4Random      0x100000000
 
 @implementation UIColor (GDIAdditions)
 
@@ -66,9 +66,9 @@
 
 + (UIColor *)randomColorWithAlpha:(CGFloat)alpha
 {
-    CGFloat red =  (CGFloat)arc4random()/(CGFloat)ARC4RANDOM_MAX;
-    CGFloat blue = (CGFloat)arc4random()/(CGFloat)ARC4RANDOM_MAX;
-    CGFloat green = (CGFloat)arc4random()/(CGFloat)ARC4RANDOM_MAX;
+    CGFloat red =  (CGFloat)arc4random()/(CGFloat)UIColorGDIAdditionsArc4Random;
+    CGFloat blue = (CGFloat)arc4random()/(CGFloat)UIColorGDIAdditionsArc4Random;
+    CGFloat green = (CGFloat)arc4random()/(CGFloat)UIColorGDIAdditionsArc4Random;
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
@@ -87,16 +87,16 @@
     [color1 getRed:&red1 green:&green1 blue:&blue1 alpha:&alpha1];
     [color2 getRed:&red2 green:&green2 blue:&blue2 alpha:&alpha2];
     
-    return [UIColor colorWithRed:interp(red1, red2, amount)
-                           green:interp(green1, green2, amount)
-                            blue:interp(blue1, blue2, amount)
-                           alpha:interp(alpha1, alpha2, amount)];
+    return [UIColor colorWithRed:[self interpolateWithLow:red1 high:red2 amount:amount]
+                           green:[self interpolateWithLow:green1 high:green2 amount:amount]
+                            blue:[self interpolateWithLow:blue1 high:blue2 amount:amount]
+                           alpha:[self interpolateWithLow:alpha1 high:alpha2 amount:amount]];
 }
 
 
-float interp(float low,float high, float n)
++ (CGFloat)interpolateWithLow:(CGFloat)low high:(CGFloat)high amount:(CGFloat)amount
 {
-    return low+  ((high-low)*n);
+    return low + ((high - low) * amount);
 }
 
 
